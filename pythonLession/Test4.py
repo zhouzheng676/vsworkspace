@@ -19,11 +19,12 @@ flag = 1
 while flag:
     numa = input("请输入：")
     # 判断是否为正整数
-    if re.match("^[+]?[0-9]*$", numa, 0):
+    if re.match("^[+]?[0-9]*$", numa, 0) and numa.__len__() > 0:
         result = is_prime(int(numa))
         print('是素数' if(result) else '不是素数')
     # 判断是否为小数
     elif re.match("^[+-]?([0-9]{1,}[.][0-9]*)$", numa, 0):
+
         print('这是一个小数,请重新输入')
     # 判断是否为负数
     elif re.match("^-[0-9]*$", numa, 0):
