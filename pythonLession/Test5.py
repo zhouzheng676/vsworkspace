@@ -16,7 +16,7 @@ def is_prime(number):
 
 def filter_prime_list(number_list):
     print(number_list.__len__())
-    if number_list.__len__  ==0 :
+    if number_list.__len__ == 0:
         print('数组里没有数字')
     else:
         prime_dic = {}
