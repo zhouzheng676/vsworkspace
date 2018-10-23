@@ -30,3 +30,4 @@ def filter_prime_list(number_list):
 
 number_list = {1, 2, 3, 4, 5, 6, 67, 7, 78, 8}
 filter_prime_list(number_list)
+
